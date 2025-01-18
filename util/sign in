@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trade Now - Chimi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .trade-interface {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .trade-btn {
+      padding: 12px 24px;
+      background-color: #27ae60;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .trade-btn:hover {
+      background-color: #2ecc71;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to the Trading Platform!</h1>
+
+    <!-- Display a message or trade interface -->
+    <div class="trade-interface">
+      <h2>You're now ready to start trading!</h2>
+      <p>Choose your options below:</p>
+
+      <!-- Trade Button Example -->
+      <button class="trade-btn" onclick="startTrade()">Start Trading</button>
+    </div>
+  </div>
+
+  <script>
+    function startTrade() {
+      // Example: Redirect to a new trading page or show more options
+      alert("Let's start trading!");
+      // You can also navigate to another page or load more content here.
+    }
+  </script>
+
+</body>
+</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-In and Trading Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    /* Sign-In Form */
+    .signin-section {
+      background-color: #fff;
+      padding: 30px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    .signin-section h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .form-group {
+margin-bottom: 20px;
+      width: 100%;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .signin-btn {
+      background-color: #f39c12;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .signin-btn:hover {
+      background-color: #e67e22;
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    /* Trade Section */
+    .trade-section {
+      background-color: #fff;
+      padding: 30px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: none; /* Initially hidden */
+    }
+
+    .trade-section h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    select, input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+/* Price and Total Value */
+    .price-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .price-info span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* Buy/Sell Buttons */
+    .trade-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .trade-btn {
+      width: 48%;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .buy-btn {
+      background-color: #27ae60;
+      color: white;
+    }
+
+    .sell-btn {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    /* Order History */
+    .order-history {
+      margin-top: 40px;
+    }
+
+    .order-history h3 {
+      text-align: center;
+    }
+
+    .history-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .history-table th, .history-table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .history-table th {
+      background-color: #f39c12;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sign-In Form Section -->
+    <div id="signinSection" class="signin-section">
+      <h2>Sign In</h2>
+
+      <!-- Sign-In Form --><form id="signinForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter username" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter password" required />
+        </div>
+
+        <button type="submit" class="signin-btn">Sign In</button>
+        <div id="signinError" class="error-message"></div>
+      </form>
+    </div>
+
+    <!-- Trading Section (Initially hidden) -->
+    <div id="tradeSection" class="trade-section">
+      <h2>Trade Now</h2>
+      <form id="tradeForm">
+        <div class="form-group">
+          <label for="tradePair">Select Trade Pair</label>
+          <select id="tradePair">
+            <option value="BTC/USD">BTC/USD</option>
+            <option value="ETH/USD">ETH/USD</option>
+            <option value="XRP/USD">XRP/USD</option>
+            <option value="LTC/USD">LTC/USD</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" placeholder="Enter amount" required />
+        </div>
+<!-- Display Current Price and Total Value -->
+        <div class="price-info">
+          <span>Current Price: <span id="currentPrice">45000</span></span>
+          <span>Total Value:<span id="totalValue">0</span></span>
+        </div>
+
+        <!-- Buy/Sell Buttons -->
+        <div class="trade-buttons">
+          <button type="button" class="trade-btn buy-btn" id="buyBtn">Buy</button>
+          <button type="button" class="trade-btn sell-btn" id="sellBtn">Sell</button>
+        </div>
+      </form>
+
+      <!-- Order History -->
+      <div class="order-history">
+        <h3>Order History</h3>
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Trade Pair</th>
+              <th>Action</th>
+              <th>Amount</th>
+              <th>Total</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="orderHistory">
+            <!-- Trade history will be added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Simulated login credentials
+    const correctUsername = "user123";
+    const correctPassword = "password123";
+
+    // Handle sign-in form submission
+    document.getElementById('signinForm').addEventListener('submit', function (e) {
+e.preventDefault();
+
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Validate username and password
+      if (username === correctUsername && password === correctPassword) {
+        // Hide sign-in form and show trade section
+        document.getElementById('signinSection').style.display = 'none';
+        document.getElementById('tradeSection').style.display = 'block';
+      } else {
+        // Show error message if credentials are incorrect
+        document.getElementById('signinError').textContent = "Invalid username or password. Please try again.";
+      }
+    });
+  </script>
+
+</body>
+</html>
