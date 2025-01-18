@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+
+    <h2>Contact Us</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        // JavaScript function to validate form fields
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            if (name == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            // Additional validations for other fields can be added here
+            return true;
+        }
+    </script>
+
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Style Example</title>
+</head>
+<body>
+<h2>Click the button to change the text color</h2>
+    <button onclick="changeColor()">Change Color</button>
+    <p id="text">This is the best trading decision.</p>
+
+    <script>
+        function changeColor() {
+            document.getElementById("text").style.color = "red"; // Change text color to red
+        }
+    </script>
+
+</body>
+</html>
+    
+  <!-- Content goes here -->
+  <section id="about">
+    <h2>About Our Platform</h2>
+    <p>Welcome to our trading platform. Start investing today!</p>
+  </section>
+
+      </body>
+</html>
+    <title>Center Text Horizontally</title>
+  <style>
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Royal trading investment</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to our Trading Investment Platform. Start your investment journey today.">
+  <title>Royal trading</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centrer une image</title>
+  <style>
+    .container {
+      text-align: center; margin-top: 50px
+ 
+    }
+    .image {
+      max-width: 100%; 
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> <img src="vitaly-mazur-z0gszFk1tYk-unsplash.jpg " alt="Trading Investment Logo"style=width:200px; height:250px;"">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Your Future in Trading & Investment</h1>
+    <h2>why should you trade in Royal trading investment;</h2>
+      <p>Start your journey to financial freedom with our expert trading tools, resources, and community support.</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>first Page</title>
+  <style>
+    .start-trade-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #f39c12;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      text-decoration: none; /* Remove underline */
+      text-align: center;
+    }
+
+    .start-trade-btn:hover {
+      background-color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Our Trading Platform</h1>
+  <p>Click below to start trading.</p>
+
+  <!-- Start Trade Now Button (Link to second page - hanry.html) -->
+  <a href="hanry.html" class="start-trade-btn">Start Trade Now</a>
+
+</body>
+</html>
